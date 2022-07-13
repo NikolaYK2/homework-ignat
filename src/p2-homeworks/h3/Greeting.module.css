@@ -1,5 +1,6 @@
 .someClass {
-
+    display: block;
+    color: red;
 }
 
 .error {
