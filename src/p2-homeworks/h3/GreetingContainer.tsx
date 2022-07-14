@@ -1,4 +1,4 @@
-import React, {ChangeEvent, useState} from 'react'
+import React, {ChangeEvent, KeyboardEvent, useState} from 'react'
 import Greeting from './Greeting'
 import {UserType} from "./HW3";
 
@@ -18,15 +18,22 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUser
 
     const setNameCallback = (e: ChangeEvent<HTMLInputElement>) => { // need to fix any
         setError('')
-        setName(e.currentTarget.value) // need to fix
+        setName(e.currentTarget.value.trim()) // need to fix//после разбора добавил trim
     }
+
     const addUser = () => {
-        if (name.trim() !== "") {
-            alert(`${'hi'} ${name}`) // need to fix
+        if (name/*.trim()*/ !== "") {//не туда trim запихнул
+            alert(`hi ${name}`) // need to fix
             addUserCallback(name)
             setName("")
         } else {
             setError("Name is required")
+        }
+    }
+
+    const onEnter =(e: KeyboardEvent<HTMLInputElement>)=>{//Добавил кнопку после разбора домашки
+        if(e.key === "Enter" && name) {
+            addUser()
         }
     }
 
@@ -40,6 +47,7 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUser
             addUser={addUser}
             error={error}
             totalUsers={totalUsers}
+            onEnter={onEnter}
         />
     )
 }

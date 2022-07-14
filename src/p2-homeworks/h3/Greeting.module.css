@@ -1,8 +1,14 @@
 .someClass {
     display: block;
     color: red;
+    height: 21px;
 }
 
 .error {
     border: 1px solid red;
+}
+
+.input:focus{
+    outline: none;
+    border: green solid 2px;
 }
