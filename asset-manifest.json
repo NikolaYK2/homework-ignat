@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/homework-ignat/static/css/main.d242662f.css",
+    "main.js": "/homework-ignat/static/js/main.b347498c.js",
+    "static/js/787.485f67de.chunk.js": "/homework-ignat/static/js/787.485f67de.chunk.js",
+    "index.html": "/homework-ignat/index.html",
+    "main.d242662f.css.map": "/homework-ignat/static/css/main.d242662f.css.map",
+    "main.b347498c.js.map": "/homework-ignat/static/js/main.b347498c.js.map",
+    "787.485f67de.chunk.js.map": "/homework-ignat/static/js/787.485f67de.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d242662f.css",
+    "static/js/main.b347498c.js"
+  ]
+}
