@@ -1,15 +1,59 @@
-.high {
-    color: red;
-}
-.low {
-    color: green;
-}
-.middle {
-    color: yellow;
+.block{
+    margin: 0 0 0 10px;
 }
 
 .item{
     display: inline-block;
     width: 100px;
     margin: 10px 0 0 0;
+    color: #bdbdbd;
+    }
+    .item__delete{
+        color: brown;
+        border-radius: 50%;
+        font-weight: 600;
+        background-color: gray;
+        cursor: pointer;
+}
+.high {
+    color: red;
+}
+.low {
+    color: #1f5d08;
+}
+.middle {
+    color: #ffc400;
+}
+
+@keyframes button {
+    0% {
+        box-shadow: 2px 2px 5px gray;
+        color: black;
+    }
+    50%{
+        box-shadow: 1px 1px 7px #a95959;
+        color: #330d0d;
+    }
+    100% {
+        box-shadow: 0px 0px 10px brown;
+        color: brown;
+    }
+}
+.buttonFilter__item{
+        min-height: 170px;
+    }
+    .buttonFilter>button{
+        margin: 0 0 0 10px;
+        background-color: gray;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        }
+        .active{
+            animation: button 0.2s ease;
+            box-shadow: 0px 0px 10px brown;
+            color: brown;
+        }
+        .stopActive{
+            box-shadow: 2px 2px 5px gray;
 }

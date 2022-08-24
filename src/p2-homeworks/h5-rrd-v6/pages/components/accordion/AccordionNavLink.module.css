@@ -1,0 +1,20 @@
+
+.block{
+    display: flex;
+    align-items: center;
+    margin: 10px 0 0 0;
+    overflow: hidden;
+    width: 265px;
+}
+.blockNavLink__check{
+    cursor: pointer;
+    display: flex;
+    width: 50px;
+    }
+    .blockNavLink__check>img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 6px 0 6px 0;
+        margin: 0 0 0 10px;
+    }

@@ -34,7 +34,8 @@ function HW4() {
                 />
 
                 <SuperInputText
-                    className={s.blue} // проверьте, рабоет ли смешивание классов
+                    className={s.blue} // проверьте, работает ли смешивание классов
+                    // type={"color"}
                 />
 
                 {/*----------------------------------------------------*/}
@@ -64,7 +65,7 @@ function HW4() {
                 </SuperCheckbox>
 
                 {/*// onChange тоже должен работать*/}
-                <SuperCheckbox checked={checked} onChange={testOnChange}/>
+                <SuperCheckbox checked={checked} onChange={testOnChange} onChangeChecked={setChecked}/>
             </div>
 
             <hr/>

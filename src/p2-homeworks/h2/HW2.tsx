@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import Affairs from './Affairs'
+import s from './Affairs.module.css';
 
 // types
 export type AffairPriorityType = 'high' | 'low' | 'middle'  // need to fix any
@@ -13,7 +14,7 @@ export type FilterType = 'all' | AffairPriorityType
 // constants
 const defaultAffairs: AffairType[] = [ // need to fix any
     {_id: 1, name: 'React', priority: 'high'},
-    {_id: 2, name: 'anime', priority: 'low'},
+    {_id: 2, name: 'the witcher', priority: 'low'},
     {_id: 3, name: 'games', priority: 'low'},
     {_id: 4, name: 'work', priority: 'high'},
     {_id: 5, name: 'html & css', priority: 'middle'},
@@ -50,7 +51,9 @@ function HW2() {
                 data={filteredAffairs}
                 setFilter={setFilter}
                 deleteAffairCallback={deleteAffairCallback}
+                filter={filter}
             />
+
 
             {/*<hr/>*/}
             {/*/!*для личного творчества, могу проверить*!/*/}

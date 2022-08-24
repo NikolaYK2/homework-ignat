@@ -22,9 +22,9 @@ const Greeting: React.FC<GreetingPropsType> = (
                    className={inputClass}
                    onKeyDown={onEnter}
             />
-            <button onClick={addUser}>add</button>
+            <button onClick={addUser} disabled={!name}>add</button>
             <span>{totalUsers}</span>
-            <span className={s.someClass}>{error}</span>
+            {error && <span className={s.someClass}>{error}</span>}
         </div>
     )
 }

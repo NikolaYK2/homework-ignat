@@ -32,7 +32,7 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUser
     }
 
     const onEnter =(e: KeyboardEvent<HTMLInputElement>)=>{//Добавил кнопку после разбора домашки
-        if(e.key === "Enter" && name) {
+        if(e.key === "Enter") {
             addUser()
         }
     }

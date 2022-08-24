@@ -1,0 +1,62 @@
+@keyframes NavLinkGo {
+    0%{transform: translate(-200px,0)}
+    100%{transform: translate(0,0)}
+}
+
+
+
+.blockNavLink{
+    display: flex;
+    margin: 0 0 0 10px;
+    animation: NavLinkGo 0.5s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+    .blockNavLink>a{
+        margin: 0 10px 0 0;
+        color: grey;
+        text-decoration: none;
+        list-style-type: none;
+}
+
+.blockNavLink__active{
+    background: linear-gradient(45deg, brown 66%, #753b3b 33%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 1px 1px 5px brown;
+    transition: all 1s ease;
+    }
+    .blockNavLink>a:first-child:hover {
+        text-shadow: 2px 2px 5px brown;
+        transform: scale(1.1);
+        transition: all 0.3s ease;
+}
+
+.blockNavLink__active_y{
+    background: linear-gradient(45deg, #753b3b 15%, #7e7e21 85%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 1px 1px 10px #a2a21f;
+    transition: all 1s ease;
+    }
+    .blockNavLink>a:nth-child(2):hover {
+        text-shadow: 2px 2px 5px yellow;
+        transform: scale(1.1);
+        transition: all 0.1s ease;
+}
+
+.blockNavLink__active_gr{
+    background: linear-gradient(45deg, #7e7e21 10%, #0f5b0f 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 1px 1px 5px #0b640b;
+    transition: all 1s ease;
+    }
+    .blockNavLink>a:nth-child(3):hover {
+        text-shadow: 2px 2px 5px green;
+        transform: scale(1.1);
+        transition: all 0.1s ease;
+}
+
+.blockNavLink__none {
+    color: grey;
+    transition: all 1s ease;
+}
