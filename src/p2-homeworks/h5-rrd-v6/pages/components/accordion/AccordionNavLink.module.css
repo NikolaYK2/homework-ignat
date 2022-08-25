@@ -1,20 +1,22 @@
+@keyframes block {
+    0%{transform: translate(-200px,0)}
+    100%{transform: translate(0,0)}
+}
 
 .block{
     display: flex;
     align-items: center;
     margin: 10px 0 0 0;
-    overflow: hidden;
-    width: 265px;
 }
 .blockNavLink__check{
     cursor: pointer;
-    display: flex;
     width: 50px;
+    overflow: hidden;
+    z-index: 2;
+    animation: block 0.5s cubic-bezier(0.68,-0.55,0.265,1.55);
     }
     .blockNavLink__check>img{
         width: 100%;
         height: 100%;
         object-fit: cover;
-        border-radius: 6px 0 6px 0;
-        margin: 0 0 0 10px;
     }

@@ -1,0 +1,42 @@
+@keyframes stop {
+    0%{
+        box-shadow: 0 0 0;
+        text-shadow: 0 0 0;
+    }
+    70%{
+        box-shadow: 0 0 0 black inset;
+    }
+    100%{
+        box-shadow: 0 0 3px 5px black inset;
+        text-shadow: 2px 2px 5px black;
+    }
+}
+.error{
+    max-width: 500px;
+    height: 300px;
+    margin: 10vh auto;
+    border-radius: 50px 0 50px 0;
+    box-shadow: 0 0 3px 5px black inset;
+    text-shadow: 2px 2px 5px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: stop 0.6s ease-out;
+    transition: all 1s ease-out;
+    }
+    .error:hover{
+        transition: all 1s ease-out;
+        box-shadow: none;
+        text-shadow: none;
+    }
+    .error>div:first-child{
+        font-weight: 700;
+        font-size: 200px;
+        line-height: 1;
+    }
+    .error>div:nth-child(2){
+        font-weight: 100;
+        font-size: 50px;
+        line-height: 1;
+}
