@@ -1,22 +1,23 @@
-@keyframes block {
-    0%{transform: translate(-200px,0)}
-    100%{transform: translate(0,0)}
-}
-
 .block{
-    display: flex;
+    display: inline-flex;
     align-items: center;
     margin: 10px 0 0 0;
+    transform: translate(-205px);
+    transition: all 200ms ease-out;
 }
 .blockNavLink__check{
     cursor: pointer;
     width: 50px;
     overflow: hidden;
     z-index: 2;
-    animation: block 0.5s cubic-bezier(0.68,-0.55,0.265,1.55);
-    }
-    .blockNavLink__check>img{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
+}
+.blockNavLink__check>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.block:hover {
+    transform: translate(0);
+    transition: all 400ms ease-in;
+}

@@ -1,14 +1,7 @@
-@keyframes NavLinkGo {
-    0%{transform: translate(-210px,0)}
-    100%{transform: translate(0,0)}
-}
-
-
 
 .blockNavLink{
     display: flex;
     margin: 0 0 0 10px;
-    animation: NavLinkGo 0.5s cubic-bezier(0.68,-0.55,0.265,1.55);
 }
     .blockNavLink>a{
         margin: 0 10px 0 0;
