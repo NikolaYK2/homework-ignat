@@ -1,3 +1,7 @@
+.spanEdit{
+    display: block;
+    margin: 0 0 24.5px 0;
+}
 .spanEdit:before{
     display: inline-block;
     content: '';

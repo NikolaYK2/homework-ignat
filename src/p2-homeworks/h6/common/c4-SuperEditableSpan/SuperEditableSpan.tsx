@@ -59,6 +59,7 @@ const SuperEditableSpan: React.FC<SuperEditableSpanType> = (
                         onEnter={onEnterCallback}
 
                         {...restProps} // отдаём инпуту остальные пропсы если они есть (value например там внутри)
+
                     />
                 ) : (
                     <span
