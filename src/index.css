@@ -5,7 +5,7 @@ body {
     sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background: url("https://sun9-79.userapi.com/s/v1/if1/hQIQTMhIdzwHYCeB-38_5X27e6tfZRLXBor8NmrFd-5UWaFAEG9vECieFatpnRcHDH2DiQ.jpg?size=1920x1080&quality=96&type=album")center center no-repeat fixed;
+    background: url("https://sun9-79.userapi.com/s/v1/if1/hQIQTMhIdzwHYCeB-38_5X27e6tfZRLXBor8NmrFd-5UWaFAEG9vECieFatpnRcHDH2DiQ.jpg?size=1920x1080&quality=96&type=album")center/cover no-repeat fixed;
     color: brown;
 }
 code {
