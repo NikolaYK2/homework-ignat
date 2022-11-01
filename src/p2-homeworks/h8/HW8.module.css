@@ -1,0 +1,25 @@
+.container{
+    max-width: 300px;
+}
+
+.button{
+display: flex;
+    justify-content: end;
+}
+
+
+
+.table {
+        width: 100%;
+        color: #d3d3d3;
+        border-collapse: collapse;
+    }
+    .table thead th{
+        width: 50%;
+        height: 50px;
+        background-color: rgba(255, 38, 0, 0.38);
+    }
+    .table tbody td{
+        width: 50%;
+
+}
